@@ -1,3 +1,6 @@
+logo-img{
+    width: 60px;
+}
 p{
     text-decoration-color: #2f2f2f;
 
@@ -5,14 +8,14 @@ p{
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: rgba(25, 24, 24, 0.858);
+    background-color: white;
     color: #333;
 }
 
 header {
-    background: #2f2f2f;
+    background: #7a7a7a;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 6px 0;
     text-align: center;
     position: relative;
     top: 0;
@@ -49,7 +52,7 @@ nav a:active {
 section {
     padding: 20px;
     margin: 20px;
-    background: rgb(255, 35, 171);
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -59,10 +62,10 @@ menu-icon {
     font-size: 3.6rem;
     color: rgb(1, 212, 212);
 }
-
+/*section accueil*/
 .accueil {
     background: #f4f4f4;
-    color: #333;
+    color: #8f8f8f;
 }
 .accueil h1 {
     font-size: 7rem;
@@ -76,10 +79,75 @@ menu-icon {
 }
 
 .accueil-img img {
-    width: 32vw;
+    width: 25vw;
     border-radius: 50%;
     position: relative;
     top: 0;
+    box-shadow: 0 0 25px rgb(156, 92, 47);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.accueil-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 1000px;
+    line-height: 1.8;
+}
+
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid #8f8f8f;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: #8f8f8f;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover{
+    background-color: #8f8f8f;
+    color: #f4f4f4;
+    box-shadow: 0 0 25px #8f8f8f;
+    transform: scale(1.3) translateY(-5px);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #8f8f8f;
+    box-shadow: 0 0 25px #8f8f8f;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8f8f8f;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #8f8f8f;
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-group a:nth-of-type(2){
+    background-color: transparent;
+    color: #8f8f8f;
+    border: 1px solid #8f8f8f;
+    box-shadow: 0 0 25px transparent;
 }
 
 footer {
